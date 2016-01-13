@@ -1,0 +1,188 @@
+ {
+   "apis": [
+     {
+      "id" : "SCM-API",
+      "title" : "SCM API",
+      "groups" : [
+        {
+          "id" : "id1",
+          "name": "xxx",
+          "endPoints" : [
+            {
+              "id" : "id11",
+              "name": "/HomeDelivery",
+              "title": "[直配]確認出貨",
+              "description": "[直配]確認出貨",
+              "url": "http://www.udn.com.tw",
+              "method": "GET",
+              "headerParameters": [
+                  {
+                      "name": "accept",
+                      "title": "可接受資料類型",
+                      "description": "可接受資料類型",
+                      "type": "string",
+                      "default": "application/json"
+                  },
+                  {
+                      "name": "content-type",
+                      "title": "資料類型",
+                      "description": "資料類型",
+                      "type": "string",
+                      "default": "application/json"
+                  },
+                  {
+                      "name": "test",
+                      "title": "test",
+                      "description": "test",
+                      "type": "string",
+                      "default": "application/json"
+                  }
+              ],
+              "queryParameters": [
+                  {
+                      "name": "productId",
+                      "title": "商品編號",
+                      "description": "查詢商品編號",
+                      "type": "integer"
+                  }
+              ],
+              "output": "{count : 1}",
+              "outputDescription" : [
+                {
+                  "desc": "訂單編號",
+                  "type": "string",
+                  "field": "OrderCode"
+                },
+                {
+                  "desc": "處理代碼",
+                  "type": "string",
+                  "field": "ProcessCode"
+                },
+                {
+                  "desc": "筆數",
+                  "type": "int",
+                  "field": "Count"
+                }
+              ]
+            },
+            {
+              "id" : "id12",
+              "title": "[直配]已取消訂單查詢",
+              "description" : "已取消訂單查詢",
+              "method": "GET",
+              "note" : "..."
+            },
+            {
+              "id" : "id13",
+              "name" :"[直配]無法出貨",
+              "desc" : "無法出貨",
+              "note" : "..."
+            }
+          ]
+        },
+        {
+          "id" : "id2",
+          "name" :"group 2",
+          "endPoints" : [
+            {
+              "id" : "id21",
+              "name" :"[直配]確認出貨",
+              "desc" : "確認出貨",
+              "note" : "..."
+            },
+            {
+              "id" : "id22",
+              "name" :"[直配]已取消訂單查詢",
+              "desc" : "已取消訂單查詢",
+              "note" : "..."
+            },
+            {
+              "id" : "id23",
+              "name" :"[直配]無法出貨",
+              "desc" : "無法出貨",
+              "note" : "..."
+            }
+          ]
+        }
+      ]
+    },
+     {
+      "id": "Warehouse-API",
+      "title" : "Warehouse API",
+      "groups" : [
+        {
+          "id" : "id3",
+          "name" :"出貨查詢",
+          "endPoints" : [
+            {
+              "id" : "id31",
+              "name" :"[直配]確認出貨",
+              "desc" : "確認出貨",
+              "note" : "..."
+            },
+            {
+              "id" : "id32",
+              "name" :"[直配]已取消訂單查詢",
+              "desc" : "已取消訂單查詢",
+              "note" : "..."
+            },
+            {
+              "id" : "id33",
+              "name" :"[直配]無法出貨",
+              "desc" : "無法出貨",
+              "note" : "..."
+            }
+          ]
+        },
+        {
+          "id" : "id4",
+          "name" :"group 2",
+          "endPoints" : [
+            {
+              "id" : "id41",
+              "name" :"[直配]確認出貨",
+              "desc" : "確認出貨",
+              "note" : "..."
+            },
+            {
+              "id" : "id42",
+              "name" :"[直配]已取消訂單查詢",
+              "desc" : "已取消訂單查詢",
+              "note" : "..."
+            },
+            {
+              "id" : "id43",
+              "name" :"[直配]無法出貨",
+              "desc" : "無法出貨",
+              "note" : "..."
+            }
+          ]
+        },
+		{
+          "id" : "id5",
+          "name" :"測試 1234",
+          "endPoints" : [
+            {
+              "id" : "id41",
+              "name" :"[直配]確認出貨",
+              "desc" : "確認出貨",
+              "note" : "..."
+            },
+            {
+              "id" : "id42",
+              "name" :"[直配]已取消訂單查詢",
+              "desc" : "已取消訂單查詢",
+              "note" : "..."
+            },
+            {
+              "id" : "id43",
+              "name" :"[直配]無法出貨",
+              "desc" : "無法出貨",
+              "note" : "..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
